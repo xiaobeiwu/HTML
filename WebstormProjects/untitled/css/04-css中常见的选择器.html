@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*后代选择器*/
+       /*
+        #main p{
+            color: red;
+        }
+        */
+
+        /*直接后代选择器*/
+        #main > p {
+            color: purple;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>div中的p标签</p>
+        <span>
+            <div>span中的div</div>
+           <p>span中的p标签</p>
+        </span>
+    </div>
+    <p>外面的p标签</p>
+</body>
+</html>

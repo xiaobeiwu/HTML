@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset=utf-8> 
+<style>
+	#main{
+            font-size: 50px;
+            font-weight: bold;
+        }
+	a{
+        background-color: yellow;
+        width:200px;
+        height: 60px;
+    }
+</style>
+<script type="text/javascript">
+function show_confirm()
+{
+var r=confirm("Press a button!");
+if (r==true)
+  {
+   document.write("You pressed OK!")
+  }
+else
+  {
+  document.write("You pressed Cancel!");
+  }
+}
+</script>
+</head>
+<body>
+
+<button id="main" onclick="show_confirm()">try it</button>
+
+<br>
+<br>
+<br>
+用户名：<input type="text" name="username" disabled="disabled">
+密码：<input type="password" id="password">
+<br>
+
+
+
+
+<form>
+男性：
+<input type="radio" id="rd-1"  checked="checked" name="Sex" value="male" />
+<br />
+女性：
+<input type="radio" id="rd-2"  name="Sex" value="female" />
+</form>
+
+<p>当用户点击一个单选按钮时，该按钮会变为选中状态，其他所有按钮会变为非选中状态。</p>
+
+
+<form>
+我喜欢自行车：
+<input type="checkbox" id="cb-1" name="Bike">
+<br />
+我喜欢汽车：
+<input type="checkbox" id="cb-2" name="Car">
+<br>
+我喜欢步行:
+<input type="checkbox" id="cb-3" name="walk">
+<br />
+
+</form>
+
+<p>frame练习</p>
+<iframe id="f1" src="page1.html"></iframe>
+<iframe id="f2" src="page2.html"></iframe>
+<br>
+<br>
+<p>超链接:</p>
+<a href="http://news.baidu.com/" target="_self">新闻</a>
+<a href="https://www.baidu.com/" target="_blank">百度</a>
+<br>
+<br>
+<br>
+
+<input type="file">
+<br>
+<input type="submit" value="提交" name="contiue">
+<input type="button" value="重置" name="contiue">
+
+</body>
+</html>

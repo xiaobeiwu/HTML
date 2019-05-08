@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类和伪元素</title>
+    <style>
+        p{
+            width:300px;
+            background-color: skyblue;
+        }
+
+        /*伪元素*/
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+        p::first-line{
+            color: purple;
+        }
+        /*伪类*/
+        p.test1:hover{
+            width: 600px;
+            background-color:palegreen;
+        }
+
+        input:focus{
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <p class="test1">大部分的孩子都是天真善良的，他们的世界其实很简单，没有太多的伪装和恶意。当然人孰能无过，更别说是小孩子，他们偶尔也难免会有犯错的时候。因此作为家长，应该学会包容孩子，接纳孩子，才能使孩子身心健康发展。但是，家长该如何正确接纳孩子呢？</p>
+    <p>接纳，可以简单地拆分理解为接受和采纳，在教育孩子的过程中，家长有必要学会正确接纳孩子。但是接纳不代表是纵容和忍受，纵容孩子只会让孩子在溺爱中成长，永远做一个养尊处优的人，而忍受孩子则会让家长的情绪和心态永远处于消极状态。因此对孩子是不可以纵容和忍受的，而是应该接纳，把孩子所有不好的都教育转变成为好的，让孩子成为一个更优秀的人。</p>
+    <p>家长想要做到正确接纳孩子，那么就要先明白什么是真正的接纳。接纳并不是说把孩子的好的坏的都全然接纳了，而且应该接纳孩子好的，并包容孩子不好的去引导成好的。</p>
+    <input type="text">
+</body>
+</html>

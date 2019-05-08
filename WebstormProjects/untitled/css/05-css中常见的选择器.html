@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*兄弟选择器*/
+       /* 查找后面一个兄弟元素
+        兄弟元素+兄弟元素{}
+
+        查找后面所有的兄弟元素
+        兄弟元素~兄弟元素{}
+        */
+
+        div{
+            background-color: green;
+        }
+        /*查找后面一个兄弟元素*/
+        div + p{
+            background-color: darkblue;
+            color: red;
+        }
+
+        /*查找所有的兄弟元素*/
+        div~p{
+            background-color: skyblue;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>div中的p标签</p>
+        <span>
+            <div>span中的div</div>
+        </span>
+    </div>
+    <p>与div相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+
+
+
+
+</body>
+</html>
